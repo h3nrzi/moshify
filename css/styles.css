@@ -1,6 +1,9 @@
 /* TODO: BASIS */
 
 :root {
+  --border-radius: 35px;
+
+  /* COLORS */
   --color-primary: #006efd;
   --color-primary-hover: #0061df;
 
@@ -12,6 +15,7 @@
 
   --color-headings: #210e6b;
   --color-body: #918ca4;
+  --color-border: #ccc;
 }
 
 *,
@@ -264,8 +268,8 @@ a {
 
 .input {
   padding: 1.5rem 3.5rem;
-  border: 1px solid #ccc;
-  border-radius: 35px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   outline: 0;
   color: var(--color-headings);
   font-size: 2rem;
@@ -278,5 +282,23 @@ a {
 @media screen and(min-width: 1024px) {
   .input {
     font-size: 1.5rem;
+  }
+}
+
+/* Input Group */
+
+.inputGroup {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+
+  & .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 2rem;
+  }
+
+  & .btn {
+    margin: 4px;
   }
 }
