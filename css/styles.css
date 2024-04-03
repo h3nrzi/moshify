@@ -4,7 +4,7 @@
   --border-radius: 35px;
 
   /* COLORS */
-  --color-primary: #006efd;
+  --color-primary: #2584ff;
   --color-primary-hover: #0061df;
 
   --color-secondary: #00d9ff;
@@ -131,6 +131,7 @@ a {
 
   &.badge--small {
     font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 
@@ -320,6 +321,10 @@ a {
       background-color: var(--color-primary);
       color: #fff;
     }
+
+    & .badge--primary {
+      background-color: #126de4;
+    }
   }
 
   &.card--secondary {
@@ -327,5 +332,43 @@ a {
       background-color: var(--color-secondary);
       color: #fff;
     }
+
+    & .badge--secondary {
+      background-color: #03c2e3;
+    }
+  }
+}
+
+/* Plans */
+
+.plan {
+  & .plan__name {
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  & .plan__price {
+    font-size: 6rem;
+  }
+
+  & .plan__billingCycle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 1rem;
+  }
+
+  & .plan__description {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  & .list__item {
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
   }
 }
