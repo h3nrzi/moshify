@@ -13,35 +13,24 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- block component -->
-    <section class="block">
-      <div class="container">
-        <header class="block__header">
-          <h2 class="block__heading">Heading</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, temporibus.</p>
-        </header>
-      </div>
-    </section>
-
-    <!-- block component -->
-    <section class="block block--dark block--skewedLeft">
-      <div class="container">
-        <header class="block__header">
-          <h2 class="block__heading">Heading</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, temporibus.</p>
-        </header>
-      </div>
-    </section>
-
-    <!-- block component -->
-    <section class="block block--dark block--skewedRight">
-      <div class="container">
-        <header class="block__header">
-          <h2 class="block__heading">Heading</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, temporibus.</p>
-        </header>
-      </div>
-    </section>
+    <!-- navbar component -->
+    <!-- collapsible component -->
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/">
+        <img src="images/logo.svg" alt="" />
+      </a>
+      <!-- icon component -->
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu" />
+      </svg>
+      <!-- list component -->
+      <ul class="list nav__list collapsible__content">
+        <li class="list__item nav__item"><a href="#">Hosting</a></li>
+        <li class="list__item nav__item"><a href="#">VS</a></li>
+        <li class="list__item nav__item"><a href="#">Domain</a></li>
+        <li class="list__item nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <script src="js/main.js"></script>
   </body>
-  <script src="js/main.js"></script>
 </html>
