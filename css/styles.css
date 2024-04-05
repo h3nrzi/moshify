@@ -47,6 +47,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -607,7 +608,6 @@ a {
 
 .block {
   padding: var(--padding-vertical-block) 2rem;
-  border: 2px solid red;
 
   & .block__header {
     text-align: center;
@@ -718,5 +718,37 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* TODO: Section */
+
+/* Hero */
+
+.hero {
+  & .hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+  }
+
+  & .hero__img {
+    width: 100%;
+  }
+
+  &.block--skewedLeft {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+
+    & .hero__content {
+      text-align: left;
+      align-self: center;
+    }
   }
 }
