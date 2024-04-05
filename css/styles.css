@@ -232,6 +232,7 @@ a {
   cursor: pointer;
   white-space: nowrap;
   margin: 1rem 0;
+  outline: 0;
 
   &.btn--primary {
     background-color: var(--color-primary);
@@ -280,6 +281,13 @@ a {
   &.btn--stretched {
     padding-right: 6rem;
     padding-left: 6rem;
+  }
+
+  & .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
   }
 }
 
@@ -749,6 +757,45 @@ a {
     & .hero__content {
       text-align: left;
       align-self: center;
+    }
+  }
+}
+
+/* domain */
+
+.domain {
+  & .domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+
+    & .list__item {
+      margin-bottom: 2rem;
+    }
+  }
+
+  & .inputGroup {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .domain {
+    & .domain__prices {
+      font-size: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    & .inputGroup {
+      max-width: 650px;
+      margin: 4rem auto;
     }
   }
 }
