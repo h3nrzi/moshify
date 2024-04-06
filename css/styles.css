@@ -633,6 +633,7 @@ a {
 
   & .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 
     & .block__heading {
       margin-top: 0;
@@ -873,10 +874,6 @@ a {
 .showcase {
   & .showcase__img > img {
     width: 100%;
-  }
-
-  & .block__header {
-    margin-bottom: 4rem;
   }
 }
 
