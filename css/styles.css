@@ -421,14 +421,16 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .plan__name {
-    font-size: 1.4rem;
-  }
-  .plan__price {
-    font-size: 5rem;
-  }
-  .plan__billingCycle {
-    font-size: 1.6rem;
+  .plan {
+    & .plan__name {
+      font-size: 1.4rem;
+    }
+    & .plan__price {
+      font-size: 5rem;
+    }
+    & .plan__billingCycle {
+      font-size: 1.6rem;
+    }
   }
 }
 
@@ -761,7 +763,7 @@ a {
   }
 }
 
-/* domain */
+/* Domain */
 
 .domain {
   & .domain__prices {
@@ -796,6 +798,32 @@ a {
     & .inputGroup {
       max-width: 650px;
       margin: 4rem auto;
+    }
+  }
+}
+
+/* Plan */
+
+.plan {
+  & .grid {
+    gap: 8rem 4rem;
+  }
+
+  & .card {
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .plan {
+    &.plan--popular {
+      transform: scale(1.1);
     }
   }
 }
