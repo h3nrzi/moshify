@@ -893,3 +893,89 @@ a {
     }
   }
 }
+
+/* footer */
+
+.footer {
+  background-color: #232323;
+
+  & .footer__sections {
+    & .footer__section {
+      padding: 2rem;
+      border-bottom: 1px solid #393939;
+
+      & .footer__heading {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      & .list {
+        margin: 0;
+
+        & > li {
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    & .footer__brand {
+      margin-top: 5rem;
+      text-align: center;
+
+      & .footer__copyright {
+        font-size: 2.1rem;
+        color: #fff;
+        opacity: 0.3;
+      }
+
+      & > img {
+        /* TODO: Consider refactoring this and applying it to all images. */
+        width: 100%;
+        max-width: 230px;
+      }
+    }
+
+    & a {
+      color: #777;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    & .footer__sections {
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+      & .footer__section {
+        border: 0;
+
+        & .collapsible__chevron {
+          display: none;
+        }
+
+        & .collapsible__content {
+          opacity: 1;
+          max-height: 100%;
+        }
+
+        & .footer__heading {
+          font-size: 1.6rem;
+        }
+      }
+
+      & .footer__brand {
+        order: -1;
+        margin-top: 1rem;
+
+        & .footer__copyright {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
