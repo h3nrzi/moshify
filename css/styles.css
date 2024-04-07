@@ -980,3 +980,9 @@ a {
     }
   }
 }
+
+/* Callout */
+
+.blockCallout {
+  transform: translateY(10rem);
+}
