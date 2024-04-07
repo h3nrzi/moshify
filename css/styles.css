@@ -95,7 +95,7 @@ p {
   }
 }
 
-/* TODO: COMPONENTS */
+/************************************ COMPONENTS */
 
 /* Link */
 
@@ -747,7 +747,7 @@ a {
   }
 }
 
-/* TODO: Section */
+/************************************ BLOCKS */
 
 /* Hero */
 
@@ -840,7 +840,7 @@ a {
   }
 }
 
-/* Future */
+/* Feature */
 
 .feature {
   gap: 4rem 2rem;
